@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/file_db
+    username: postgres
+    password: Legosi
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+server:
+  port: 9090
+
+scheduled:
+  update:
+    status:
+      timeupdatedelay: 30000
+      timeuploaddelay: 30000
+
+

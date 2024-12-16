@@ -1,0 +1,6 @@
+env{
+IPFS_SCHEDULED_UPDATE_STATUS - (min) Время обновления статуса ноды (default = 30 min)
+IPFS_SCHEDULED_UPLOAD_NODES - (min) Время обновления загрузки файлов на ноды (default = 30 min)
+IPFS_LOCAL_NODE - адрес локальной ноды (default = /ip4/127.0.0.1/tcp/5001)
+IPFS_TIMEOUT_REQUEST_FROM_NODE - (s) Время для ожидания отклика от Ноды (default = 2s)
+}
