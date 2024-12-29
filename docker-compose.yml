@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+
+  client-backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://database/file_db
+    env_file:
+      - ./example.env
+
+    ports:
+      - "9090:9090"
+    depends_on:
+      - database
+      - ipfs
+
+  database:
+    image: postgres:14.7-alpine
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: Legosi
+      POSTGRES_DB: file_db
+    ports:
+      - "5432:5432"
+    restart: always
+
+  ipfs:
+    image: ipfs/kubo:latest
+    ports:
+      - "4001:4001"   # Порт для пира
+      - "5001:5001"   # API порт
+      - "8080:8080"   # HTTP порт
+    restart: unless-stopped

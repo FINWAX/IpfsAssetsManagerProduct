@@ -74,7 +74,7 @@ public class NodesService {
     public List<ListNodesIPFS> getAllNodes(Integer offset, Integer count){
 
         var listNodes = nodesRepository.findAll();
-        if(offset<listNodes.size()) {
+        if(offset<=listNodes.size()) {
             var offsetListNodes = listNodes.subList(offset, listNodes.size());
             if(count>=offsetListNodes.size()){
                 return offsetListNodes;

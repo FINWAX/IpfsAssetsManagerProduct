@@ -88,13 +88,13 @@ public class ScheduledStatusService {
 
     public void getUpdatesScheduled() {
         updateDelays();
-        log.warn("scheduledUpdate " +new Date());
+        log.info("scheduledUpdate " +new Date());
         nodesService.SchedulerUpdateStatuses();
     }
 
     public void getUpdatesScheduledUploadNodes() {
         updateDelays();
-        log.warn("scheduledUpload " +new Date());
+        log.info("scheduledUpload " +new Date());
         nodesService.NodesUpdate();
     }
 }

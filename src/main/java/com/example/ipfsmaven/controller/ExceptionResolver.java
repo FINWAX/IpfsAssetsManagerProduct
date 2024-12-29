@@ -2,7 +2,6 @@ package com.example.ipfsmaven.controller;
 
 
 import com.example.ipfsmaven.dto.ExceptionDto;
-import com.example.ipfsmaven.exception.LoadFileOnNodesException;
 import com.example.ipfsmaven.exception.NodeNotFoundException;
 import com.example.ipfsmaven.exception.NodeUpperException;
 import com.example.ipfsmaven.exception.PagginationException;

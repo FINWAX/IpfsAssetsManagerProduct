@@ -4,3 +4,6 @@ IPFS_SCHEDULED_UPLOAD_NODES - (min) Время обновления загруз
 IPFS_LOCAL_NODE - адрес локальной ноды (default = /ip4/127.0.0.1/tcp/5001)
 IPFS_TIMEOUT_REQUEST_FROM_NODE - (s) Время для ожидания отклика от Ноды (default = 2s)
 }
+endpoints{
+
+}
