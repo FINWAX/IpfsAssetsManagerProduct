@@ -5,11 +5,11 @@ import lombok.Data;
 @Data
 public class ResponseDto {
     private boolean ok;
-    private ResultDto result;
+    private String error;
 
-    public ResponseDto(boolean ok, ResultDto result) {
+    public ResponseDto(boolean ok, String error) {
         this.ok = ok;
-        this.result = result;
+        this.error = error;
     }
     public ResponseDto(boolean ok) {
         this.ok = ok;

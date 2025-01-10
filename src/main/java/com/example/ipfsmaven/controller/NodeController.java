@@ -43,17 +43,17 @@ public class NodeController {
                 .body(historyService.getAllHistory(offset, count));
     }
 
-    @GetMapping("/removeNode/{id}")
+    @GetMapping(value = "/removeNode/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<?> removeNode(@PathVariable Long id) {
         nodesService.deleteById(id);
-        return new ResponseEntity<>(new Gson().toJson(new ResponseDto(true)), HttpStatus.NO_CONTENT);
+        return new ResponseEntity<>(new Gson().toJson(new ResponseDto(true)), HttpStatus.OK);
     }
 
 
-    @GetMapping("/removeUnavailableNodes")
+    @GetMapping(value = "/removeUnavailableNodes", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<?> removeUnavailableNodes() {
         nodesService.removeUnavailableNodes();
-        return new ResponseEntity<>(new Gson().toJson(new ResponseDto(true)), HttpStatus.NO_CONTENT);
+        return new ResponseEntity<>(new Gson().toJson(new ResponseDto(true)), HttpStatus.OK);
     }
 
 }

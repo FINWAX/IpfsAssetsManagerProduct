@@ -1,6 +1,6 @@
 package com.example.ipfsmaven.controller;
 
-import com.example.ipfsmaven.dto.ExceptionDto;
+import com.example.ipfsmaven.dto.ResponseDto;
 import com.example.ipfsmaven.service.impl.FileService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -27,7 +27,7 @@ public class FileController {
                     .body(service.getCidAndSaveFile(file));
         }catch (RuntimeException | IOException e){
            return ResponseEntity.ok()
-               .body(new ExceptionDto(e.getMessage()));
+               .body(new ResponseDto(true,e.getMessage()));
         }
     }
 

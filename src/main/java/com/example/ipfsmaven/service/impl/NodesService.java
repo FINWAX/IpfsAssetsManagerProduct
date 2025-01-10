@@ -2,8 +2,6 @@ package com.example.ipfsmaven.service.impl;
 
 import com.example.ipfsmaven.config.Config;
 import com.example.ipfsmaven.dto.NodeDto;
-import com.example.ipfsmaven.exception.LoadFileOnNodesException;
-import com.example.ipfsmaven.exception.NodeNotFoundException;
 import com.example.ipfsmaven.exception.NodeUpperException;
 import com.example.ipfsmaven.exception.PagginationException;
 import com.example.ipfsmaven.model.FileIPFS;
