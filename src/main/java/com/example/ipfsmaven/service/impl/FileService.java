@@ -55,9 +55,6 @@ public class FileService {
         return new CIDResponseDTO(fileIPFS.getCidv0(), fileIPFS.getCidv1());
     }
 
-    public List<FileIPFS> findAllFiles() {
-        return repository.findAll();
-    }
 
     public void setPackageCount() {
         final Optional<Long> countPackage = historyRepository.findLastPackage();

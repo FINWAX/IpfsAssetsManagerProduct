@@ -25,14 +25,14 @@ public class Config {
 
     public Integer getEnvScheduledUpdateStatus() {
         if (envScheduledUpdateStatus == null) {
-            return 1;
+            return 10;
         }
         return Integer.parseInt(envScheduledUpdateStatus);
     }
 
     public Integer getEnvScheduledUploadNodes() {
         if (envScheduledUploadNodes == null) {
-            return 1;
+            return 10;
         }
         return Integer.parseInt(envScheduledUploadNodes);
     }

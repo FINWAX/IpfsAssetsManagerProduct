@@ -34,5 +34,5 @@ services:
       - "5001:5001"   # API порт
       - "8080:8080"   # HTTP порт
     environment:
-      IPFS_SWARM_LISTENADDRESSES: /ip4/172.25.0.3/tcp/4001
+      IPFS_SWARM_LISTENADDRESSES: /ip4/172.30.0.3/tcp/4001
     restart: unless-stopped
