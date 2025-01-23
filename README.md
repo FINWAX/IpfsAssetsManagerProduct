@@ -37,7 +37,8 @@ docker run -d --name my-container my-image
 Local IPFS Node can be launched on a random Swarm listening, it should be tracked, written to the env file (+1) and the container should be restarted 
 
 6. Script.sh
-the script automatically downloads all files of the required folder, which is specified by the path, change the base_dir variable to the absolute path link to the folder with the required files
+   
+The script automatically downloads all files of the required folder, which is specified by the path, change the base_dir variable to the absolute path link to the folder with the required files
 
 example:
 ```
