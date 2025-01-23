@@ -117,7 +117,6 @@ public class NodesService {
             try {
                 MultipartAddr listFormat = new MultipartAddr(s.getMultiaddr());
                 IPFS ipfs = new IPFS(listFormat.getHost(), listFormat.getPort(), "/api/v0/", listFormat.getProtocol().equals("https"));
-                config.refresh();
                 IPFS ipfs1 = new IPFS(config.getEnvLocalIpfsNode());
                 Multihash filePointer = Multihash.fromBase58(file.getCidv0());
                 byte[] fileContent = ipfs1.cat(filePointer);

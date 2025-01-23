@@ -32,7 +32,6 @@ public class FileService {
         Date dateUploadFile = new Date();
         FileIPFS fileIPFS = new FileIPFS();
         HistoryIPFS historyIPFS = new HistoryIPFS();
-        config.refresh();
         IPFS ipfs = new IPFS(config.getEnvLocalIpfsNode());
         NamedStreamable.ByteArrayWrapper wrapFile = new NamedStreamable
                 .ByteArrayWrapper(Optional.ofNullable(file.getOriginalFilename()), file.getBytes());

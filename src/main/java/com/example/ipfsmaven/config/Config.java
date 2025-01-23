@@ -46,12 +46,4 @@ public class Config {
     }
 
 
-    public void refresh() {
-        this.envLocalIpfsNode = System.getenv("IPFS_LOCAL_NODE");
-        this.envScheduledUpdateStatus = System.getenv("IPFS_SCHEDULED_UPDATE_STATUS");
-        this.envScheduledUploadNodes = System.getenv("IPFS_SCHEDULED_UPLOAD_NODES");
-        this.envTimeoutRequestFromNode = System.getenv("IPFS_TIMEOUT_REQUEST_FROM_NODE");
-    }
-
-
 }
