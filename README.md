@@ -38,6 +38,7 @@ Local IPFS Node can be launched on a random Swarm listening, it should be tracke
 
 6. Script.sh
 the script automatically downloads all files of the required folder, which is specified by the path, change the base_dir variable to the absolute path link to the folder with the required files
+
 example:
 ```
 base_dir="/mnt/c/Users/nikit/out/src"
