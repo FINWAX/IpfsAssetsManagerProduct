@@ -10,7 +10,12 @@ git clone https://github.com/FINWAX/IpfsAssetsManagerProduct
 ```
 2. Change ENV variables in envFile
 
-3. UP container command:
+IPFS_SCHEDULED_UPDATE_STATUS - frequency of node status updates
+IPFS_SCHEDULED_UPLOAD_NODES - frequency of uploads to external nodes
+IPFS_LOCAL_NODE -  Swarm listening on LocalNode
+IPFS_TIMEOUT_REQUEST_FROM_NODE - External nodes wait time
+
+4. UP container command:
 ```
 docker-compose up
 ```
