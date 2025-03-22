@@ -20,7 +20,7 @@ public class Config {
         this.envTimeoutRequestFromNode = System.getenv("IPFS_TIMEOUT_REQUEST_FROM_NODE");
     }
     public String getEnvLocalIpfsNode() {
-        return Objects.requireNonNullElse(envLocalIpfsNode, "/ip4/127.0.0.1/tcp/5001");
+        return Objects.requireNonNullElse(envLocalIpfsNode, "/dns4/ipfs/tcp/5001");
     }
     public Integer getEnvTimeoutRequestFromNode() {
         if (envTimeoutRequestFromNode == null) {
